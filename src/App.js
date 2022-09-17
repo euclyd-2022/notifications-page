@@ -80,21 +80,24 @@ function App() {
 
         function updateIsRead(){ 
           
-          const newData = isread.map(obj => {
-              return {...obj, unread: false};
-            }
-          );
-          console.log(newData)
-          setRead({name:"updated"})
-          return (<Message 
-            unread= {newData.unread}
-            />)
+          // const newData = isread.map(obj => {
+          //     return {...obj, unread: 'xyz'};
+          //   }
+          // );
+          //console.log(newData)
+          setRead(
+            isread.map(
+                obj =>{ return {...obj, unread:false}}
+          ));
+          
+          
+        
         };
 
         function count(){
           let itemCount = 0;
-          for (let x in data) {
-          if (data[x]["unread"]===true){
+          for (let x in isread) {
+          if (isread[x]["unread"]===true){
             itemCount ++
           }
         } return (itemCount)
@@ -121,7 +124,7 @@ function App() {
     <div className="App">
      <div className="wrapper">
       <div className="wrapper-header"><div className="wrapper-header-left">Notifications <span className="num-items"> {count()}</span></div><div className="wrapper-header-right"><button onClick={()=>updateIsRead()}>Mark all as read</button></div></div>
-       {data.map(createMessage)}
+       {isread.map(createMessage)}
      </div>
     </div>
   );
