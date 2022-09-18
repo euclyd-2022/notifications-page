@@ -23,7 +23,7 @@
 body {
 
   background: var(--Very-light-grayish-blue);
-  font-size: 16px;
+  font-size: 15px;
   color: var(--Dark-grayish-blue);
   font-family: "Plus Jakarta Sans";
 }
@@ -34,6 +34,9 @@ a, a:visited {
   text-decoration: none;
 }
 
+p{
+ margin:2.5px
+}
 
 .wrapper {
 
@@ -63,7 +66,7 @@ a, a:visited {
   background: var(--White);
   display:inline-flex;
   flex-wrap: nowrap;
-  padding:1em;
+  padding: 1.2em 1em 1.2em 1em;
   border-radius:4px;
   line-height: 1.2em;
   
@@ -79,8 +82,8 @@ img.picture {
   width: 40px;
   height: 40px;
   vertical-align: top;
-  position:absolute;
-  right:10x;
+  position:relative;
+  left: 100px;
   
 }
 
@@ -123,8 +126,8 @@ color: var(--Blue);
 
 .avatar{
   border-radius:50%;
-  width:50px;
-  height:50px;
+  width:40px;
+  height:40px;
   padding-right:10px;
 }
 
@@ -136,6 +139,7 @@ color: var(--Blue);
   background: var(--White);
   border: 1px solid var(--Light-grayish-blue-2);
   padding: 1em;
+  margin-top: 10px;
 }
 .message:hover{
   background: var(--Light-grayish-blue-2);
@@ -159,4 +163,12 @@ color: var(--Blue);
  font-size: 8px;
  text-align:center;
  vertical-align: middle;
+}
+
+button{
+  background:none;
+  border:none;
+  color: var(--Dark-grayish-blue);
+  font-family: "Plus Jakarta Sans";
+  cursor:pointer;
 }

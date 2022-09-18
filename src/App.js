@@ -34,7 +34,7 @@ function App() {
     title:<React.Fragment>has joined your group <a href='index.html'>Chess Club</a></React.Fragment>,
     date: "1 day ago",
     message:"",
-    unread: false
+    unread: true
     },
     {
     id: 4,
