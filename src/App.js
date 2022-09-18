@@ -79,19 +79,11 @@ function App() {
         const [isread, setRead] = useState(data); 
 
         function updateIsRead(){ 
-          
-          // const newData = isread.map(obj => {
-          //     return {...obj, unread: 'xyz'};
-          //   }
-          // );
-          //console.log(newData)
           setRead(
             isread.map(
                 obj =>{ return {...obj, unread:false}}
           ));
-          
-          
-        
+
         };
 
         function count(){
