@@ -1,1 +1,1 @@
-frontend mentor notifications pave using React.js
+frontend mentor notifications page using React.js
